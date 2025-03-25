@@ -1,0 +1,197 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Clean, modern font */
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #e0f7fa, #81d4fa); /* Smooth blue gradient */
+    color: #333;
+    padding-bottom: 70px; /* Space for footer */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6f00, #ff9100); /* Gradient orange header */
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    border-bottom: 3px solid #ff4500; /* Add a subtle border for contrast */
+}
+
+h1 {
+    font-size: 3em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: color 0.4s ease-in-out;
+}
+
+h1:hover {
+    color: #ff4500; /* Color change on hover */
+}
+
+/* Navigation */
+nav {
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    background-color: #ff4500; /* Smooth hover effect */
+    color: #fff;
+    transform: translateY(-5px);
+    border-color: #ff4500;
+}
+
+/* Main Content */
+main {
+    padding: 50px 10%;
+    text-align: center;
+    color: #444;
+}
+
+h2 {
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.4s ease;
+}
+
+h2:hover {
+    color: #ff4500;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    transition: color 0.3s ease;
+}
+
+.intro p:hover {
+    color: #ff4500; /* Interactive text color change */
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Cards Section (For future additions) */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 80px; /* Footer adjustment */
+    }
+
+    header {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .intro p {
+        font-size: 1.1em;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Apply animation to main content */
+main {
+    animation: fadeIn 1.5s ease-in-out;
+}
